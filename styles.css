@@ -1,0 +1,42 @@
+/* 1. Background with Changing Colors */
+@keyframes colorChange {
+    0% {
+      background-color: #ff7f50; /* Coral */
+    }
+    25% {
+      background-color: #40e0d0; /* Turquoise */
+    }
+    50% {
+      background-color: #800080; /* Purple */
+    }
+    75% {
+      background-color: #ffff00; /* Yellow */
+    }
+    100% {
+      background-color: #ff7f50; /* Coral */
+    }
+  }
+  
+  body {
+    animation: colorChange 10s infinite; /* 10 seconds cycle for the color change */
+    font-family: 'Calisto MT', serif; /* Font setting */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 2. Font to Calisto MT */
+  h1, h2, h3, p, span, a {
+    font-family: 'Calisto MT', serif;
+  }
+  
+  /* 3. Image Expanding on Hover */
+  img {
+    width: 15%;
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect: Image expands slightly */
+  img:hover {
+    transform: scale(1.1); /* Expands image by 10% */
+  }
+  
